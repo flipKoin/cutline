@@ -31,6 +31,53 @@ The argument the instrument makes is about flattening — that a single left/rig
 line erases most of the information about a political position. It would be a
 strange argument to make from behind a licence fee.
 
+## The Cutline Score
+
+A type is only as firm as its weakest letter, so the score **is** the weakest letter:
+
+```
+cutline_score = round(min(|score|) × 100)     // 0–100
+```
+
+| Score | Band | Meaning |
+| --- | --- | --- |
+| 0–9 | Coin toss | One answer from being a different type. |
+| 10–29 | A lean | A tendency, not a conviction. |
+| 30–59 | Settled | Comfortably inside the box. |
+| 60–100 | Emphatic | Deep in it. The box fits. |
+
+It is deliberately unflattering. A respondent one answer away from another type scores near zero however emphatic the other three axes were — because that is the true state of their classification.
+
+## Hosted API
+
+You can implement the instrument yourself; this exists so you don't have to. No key, no signup, CORS open.
+
+```
+GET  https://cutline.felineunion.org/api/v1/instrument
+GET  https://cutline.felineunion.org/api/v1/types
+GET  https://cutline.felineunion.org/api/v1/types/CLIR
+POST https://cutline.felineunion.org/api/v1/score
+```
+
+```sh
+curl -s https://cutline.felineunion.org/api/v1/score \
+  -H 'Content-Type: application/json' \
+  -d '{"answers":["agree","disagree","agree", ... ]}'
+```
+
+```json
+{
+  "code": "CLIR",
+  "type": { "code": "CLIR", "name": "The Anarchist", "quadrant": "CL" },
+  "cutline_score": 4,
+  "band": "Coin toss",
+  "summary": "CLIR — Cutline Score 4/100. The method letter was decided by 4 points out of 100; change one answer and it reads CLIG.",
+  "margins": [ ... ]
+}
+```
+
+`answers` is one scale id per statement, in statement order: `agree`, `agree-soft`, `neutral`, `disagree-soft`, `disagree`.
+
 ## The honest part
 
 Sixteen-type systems report a code and stop. This one reports the code **and the

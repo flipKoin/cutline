@@ -61,12 +61,17 @@ export function score(instrument, answers) {
     }
   })
 
+  // The Cutline Score: a type is only as firm as its weakest letter.
+  const conviction = Math.round(Math.min(...axes.map(a => Math.abs(scores[a.key]))) * 100)
+  const band = (scoring.conviction ? scoring.conviction.bands : []).find(b => conviction <= b.max) || null
+
   if (noReading) {
     // No code was issued, so there is no letter to report and nothing to flip
     // from. Reporting either would re-introduce the phantom type this branch
     // exists to withhold.
     return {
       noReading: true, code: null, type: null, quadrant: null, scores,
+      conviction, band,
       margins: margins.map(m => ({ ...m, letter: null, toward: null, flipped: null })),
     }
   }
@@ -76,6 +81,8 @@ export function score(instrument, answers) {
     code,
     type: types[code],
     quadrant: quadrants[code.slice(0, 2)],
+    conviction,
+    band,
     scores,
     margins,
   }
@@ -88,10 +95,10 @@ export function marginSummary(result) {
   }
   const thin = result.margins.filter(m => m.thin)
   if (!thin.length) {
-    const min = Math.min(...result.margins.map(m => m.points))
-    return `${result.code} — every cut cleared by at least ${min} points.`
+    return `${result.code} — Cutline Score ${result.conviction}/100 (${result.band ? result.band.label.toLowerCase() : 'clear'}). ` +
+           `Every cut cleared by at least ${result.conviction} points.`
   }
   const m = thin[0]
-  return `${result.code} — but the ${m.name.toLowerCase()} letter was decided by ${m.points} points out of 100. ` +
-         `Change one answer and it reads ${m.flipped}.`
+  return `${result.code} — Cutline Score ${result.conviction}/100. The ${m.name.toLowerCase()} letter was decided by ` +
+         `${m.points} points out of 100; change one answer and it reads ${m.flipped}.`
 }

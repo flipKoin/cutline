@@ -1,7 +1,7 @@
 {
   "id": "cutline",
   "name": "Cutline",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "title": "Cutline — the 16 political types",
   "tagline": "The axes are real. Somebody chose where to slice.",
   "summary": "Four independent political axes; twenty-four statements; a four-letter type, reported alongside the margin by which each letter was assigned. Named for the thing it makes visible: the cut across a continuous axis that turns a score into a letter.",
@@ -303,6 +303,38 @@
       "threshold": 0.05,
       "rule": "If |score| < threshold on every axis, emit no type at all.",
       "why": "Four sign tests on four scores of roughly zero still produce a confident four-letter type manufactured entirely out of rounding. Reporting that as a result is the failure mode this instrument exists to demonstrate. Implementations that add a tie-break here have reimplemented the thing being criticised."
+    },
+    "conviction": {
+      "name": "Cutline Score",
+      "definition": "The smallest of the four axis margins, expressed 0-100: round(min(|score|) * 100).",
+      "range": [
+        0,
+        100
+      ],
+      "rule": "A type is only as firm as its weakest letter, so the score is the weakest letter.",
+      "why": "Every sixteen-type system reports which box you are in. None report how nearly you were put in a different one. The score is that number, and it is deliberately unflattering: a respondent one answer away from another type scores near zero no matter how emphatic the other three axes were.",
+      "bands": [
+        {
+          "max": 9,
+          "label": "Coin toss",
+          "note": "One answer from being a different type."
+        },
+        {
+          "max": 29,
+          "label": "A lean",
+          "note": "A tendency, not a conviction."
+        },
+        {
+          "max": 59,
+          "label": "Settled",
+          "note": "Comfortably inside the box."
+        },
+        {
+          "max": 100,
+          "label": "Emphatic",
+          "note": "Deep in it. The box fits."
+        }
+      ]
     },
     "thin_margin": {
       "threshold": 0.12,
