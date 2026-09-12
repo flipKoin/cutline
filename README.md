@@ -1,10 +1,15 @@
-# The 16 political types
+# Cutline
 
-> Four axes. Sixteen boxes. One of them is yours — barely.
+> The axes are real. Somebody chose where to slice.
 
-An open political typing instrument. Twenty-four statements, four independent
-axes, a four-letter type — and, unlike every other sixteen-type system, **the
-margin by which each letter was assigned**.
+An open political typology. Twenty-four statements, four independent axes, a
+four-letter type — and, unlike every other sixteen-type system, **the margin by
+which each letter was assigned**.
+
+It is named for the thing it makes visible. An axis is continuous; a letter is
+not. Somewhere between them is a line that somebody drew, and on which nothing
+in the data insists. Cutline shows you where you fell relative to that line, and
+how close it was.
 
 Live version: **<https://theaxes.fyi/quiz/types/>**
 
@@ -117,5 +122,5 @@ Built for [theaxes.fyi](https://theaxes.fyi), a teaching site arguing that the
 left/right spectrum is a flattened map and the honest frame is a grid. The
 thesis originates with [@flipkoin2](https://x.com/flipkoin2).
 
-If you fork the instrument, CC BY-SA asks you to credit theaxes.fyi and keep
-your version under the same licence.
+If you fork the instrument, CC BY-SA asks you to credit Cutline / theaxes.fyi
+and keep your version under the same licence.

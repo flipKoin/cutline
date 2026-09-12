@@ -1,15 +1,18 @@
 {
-  "id": "theaxes-16-types",
-  "version": "1.0.0",
-  "title": "The 16 political types",
-  "summary": "Four independent political axes; twenty-four statements; a four-letter type, reported alongside the margin by which each letter was assigned.",
+  "id": "cutline",
+  "name": "Cutline",
+  "version": "1.1.0",
+  "title": "Cutline — the 16 political types",
+  "tagline": "The axes are real. Somebody chose where to slice.",
+  "summary": "Four independent political axes; twenty-four statements; a four-letter type, reported alongside the margin by which each letter was assigned. Named for the thing it makes visible: the cut across a continuous axis that turns a score into a letter.",
   "source": "https://theaxes.fyi/quiz/types/",
+  "repository": "https://github.com/flipKoin/cutline",
   "generated": "2026-09-12",
   "license": {
     "instrument": "CC-BY-SA-4.0",
     "instrument_url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "code": "MIT",
-    "attribution": "theaxes.fyi",
+    "attribution": "Cutline — theaxes.fyi",
     "note": "Share-alike: fork it, translate it, sell it — derivatives of the instrument must stay under the same licence. It cannot be enclosed."
   },
   "axes": [
