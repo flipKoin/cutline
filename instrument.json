@@ -1,0 +1,585 @@
+{
+  "id": "theaxes-16-types",
+  "version": "1.0.0",
+  "title": "The 16 political types",
+  "summary": "Four independent political axes; twenty-four statements; a four-letter type, reported alongside the margin by which each letter was assigned.",
+  "source": "https://theaxes.fyi/quiz/types/",
+  "generated": "2026-09-12",
+  "license": {
+    "instrument": "CC-BY-SA-4.0",
+    "instrument_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "code": "MIT",
+    "attribution": "theaxes.fyi",
+    "note": "Share-alike: fork it, translate it, sell it — derivatives of the instrument must stay under the same licence. It cannot be enclosed."
+  },
+  "axes": [
+    {
+      "key": "own",
+      "name": "Ownership",
+      "negative": {
+        "letter": "C",
+        "label": "Collective"
+      },
+      "positive": {
+        "letter": "P",
+        "label": "Private"
+      }
+    },
+    {
+      "key": "ctl",
+      "name": "Control",
+      "negative": {
+        "letter": "L",
+        "label": "Decentralized"
+      },
+      "positive": {
+        "letter": "A",
+        "label": "Centralized"
+      }
+    },
+    {
+      "key": "hor",
+      "name": "Horizon",
+      "negative": {
+        "letter": "I",
+        "label": "Internationalist"
+      },
+      "positive": {
+        "letter": "N",
+        "label": "National"
+      }
+    },
+    {
+      "key": "met",
+      "name": "Method",
+      "negative": {
+        "letter": "G",
+        "label": "Gradual"
+      },
+      "positive": {
+        "letter": "R",
+        "label": "Rupture"
+      }
+    }
+  ],
+  "scale": [
+    {
+      "id": "agree",
+      "label": "Strongly agree",
+      "multiplier": 1
+    },
+    {
+      "id": "agree-soft",
+      "label": "Agree",
+      "multiplier": 0.5
+    },
+    {
+      "id": "neutral",
+      "label": "Neutral / unsure",
+      "multiplier": 0
+    },
+    {
+      "id": "disagree-soft",
+      "label": "Disagree",
+      "multiplier": -0.5
+    },
+    {
+      "id": "disagree",
+      "label": "Strongly disagree",
+      "multiplier": -1
+    }
+  ],
+  "statements": [
+    {
+      "id": 1,
+      "primary_axis": "own",
+      "text": "Water, power and rail should be publicly owned, not licensed out to private operators.",
+      "weights": {
+        "own": -1
+      }
+    },
+    {
+      "id": 2,
+      "primary_axis": "own",
+      "text": "A firm’s profits belong to the people who put up the capital, not the people who did the work.",
+      "weights": {
+        "own": 1
+      }
+    },
+    {
+      "id": 3,
+      "primary_axis": "own",
+      "text": "Housing should be allocated on need, not on ability to pay.",
+      "weights": {
+        "own": -0.9
+      }
+    },
+    {
+      "id": 4,
+      "primary_axis": "own",
+      "text": "Large inheritances should pass to heirs substantially intact.",
+      "weights": {
+        "own": 0.8
+      }
+    },
+    {
+      "id": 5,
+      "primary_axis": "own",
+      "text": "Workers should have a controlling say in how the firms they work for are run.",
+      "weights": {
+        "own": -0.8,
+        "ctl": -0.3
+      }
+    },
+    {
+      "id": 6,
+      "primary_axis": "own",
+      "text": "Markets allocate resources better than any committee can.",
+      "weights": {
+        "own": 0.9
+      }
+    },
+    {
+      "id": 7,
+      "primary_axis": "ctl",
+      "text": "In a genuine emergency, government should be able to suspend ordinary legal limits.",
+      "weights": {
+        "ctl": 1
+      }
+    },
+    {
+      "id": 8,
+      "primary_axis": "ctl",
+      "text": "Decisions should be made at the smallest scale capable of making them.",
+      "weights": {
+        "ctl": -0.9
+      }
+    },
+    {
+      "id": 9,
+      "primary_axis": "ctl",
+      "text": "Mass surveillance of communications is justified if it prevents attacks.",
+      "weights": {
+        "ctl": 0.9
+      }
+    },
+    {
+      "id": 10,
+      "primary_axis": "ctl",
+      "text": "People are better at governing themselves than any authority is at governing them.",
+      "weights": {
+        "ctl": -1
+      }
+    },
+    {
+      "id": 11,
+      "primary_axis": "ctl",
+      "text": "Some speech is dangerous enough that the state should be able to prohibit it.",
+      "weights": {
+        "ctl": 0.8
+      }
+    },
+    {
+      "id": 12,
+      "primary_axis": "ctl",
+      "text": "Police forces should be smaller, with much of their work handed to unarmed civilian bodies.",
+      "weights": {
+        "ctl": -0.8
+      }
+    },
+    {
+      "id": 13,
+      "primary_axis": "hor",
+      "text": "My first obligation is to people in my own country.",
+      "weights": {
+        "hor": 1
+      }
+    },
+    {
+      "id": 14,
+      "primary_axis": "hor",
+      "text": "Borders are an accident of history and a moral problem, not a foundation.",
+      "weights": {
+        "hor": -1
+      }
+    },
+    {
+      "id": 15,
+      "primary_axis": "hor",
+      "text": "Immigration should be substantially reduced.",
+      "weights": {
+        "ctl": 0.3,
+        "hor": 0.9
+      }
+    },
+    {
+      "id": 16,
+      "primary_axis": "hor",
+      "text": "Struggles abroad are my struggle too — solidarity doesn’t stop at a border.",
+      "weights": {
+        "hor": -0.9
+      }
+    },
+    {
+      "id": 17,
+      "primary_axis": "hor",
+      "text": "International bodies should be able to overrule a national government.",
+      "weights": {
+        "ctl": 0.4,
+        "hor": -0.8
+      }
+    },
+    {
+      "id": 18,
+      "primary_axis": "hor",
+      "text": "A national culture is something worth protecting from outside influence.",
+      "weights": {
+        "hor": 0.8
+      }
+    },
+    {
+      "id": 19,
+      "primary_axis": "met",
+      "text": "The current system can be fixed by working through its own institutions.",
+      "weights": {
+        "met": -1
+      }
+    },
+    {
+      "id": 20,
+      "primary_axis": "met",
+      "text": "Some institutions cannot be reformed. They have to be abolished.",
+      "weights": {
+        "met": 1
+      }
+    },
+    {
+      "id": 21,
+      "primary_axis": "met",
+      "text": "Sudden, sweeping change usually costs more than it wins.",
+      "weights": {
+        "met": -0.9
+      }
+    },
+    {
+      "id": 22,
+      "primary_axis": "met",
+      "text": "Waiting for incremental reform is how injustice gets managed instead of ended.",
+      "weights": {
+        "met": 0.9
+      }
+    },
+    {
+      "id": 23,
+      "primary_axis": "met",
+      "text": "Political change should proceed only with a clear majority behind it.",
+      "weights": {
+        "met": -0.8
+      }
+    },
+    {
+      "id": 24,
+      "primary_axis": "met",
+      "text": "There are moments when breaking the law is the only honest political act.",
+      "weights": {
+        "ctl": -0.4,
+        "met": 0.8
+      }
+    }
+  ],
+  "scoring": {
+    "procedure": [
+      "For each statement, take the multiplier of the chosen scale option.",
+      "For each axis the statement carries a weight on, add multiplier × weight to that axis's running total.",
+      "Divide each axis total by the sum of the absolute values of every weight on that axis. The result is in [-1, 1].",
+      "A negative score takes the axis's negative letter, otherwise the positive letter. Concatenate in axis order for the four-letter code."
+    ],
+    "letter_rule": "score < 0 → negative letter; score >= 0 → positive letter",
+    "balance": "Every axis is signed-balanced: its weights sum to zero. Agreeing with every statement therefore scores zero on all four axes, as does disagreeing with every statement.",
+    "no_reading": {
+      "threshold": 0.05,
+      "rule": "If |score| < threshold on every axis, emit no type at all.",
+      "why": "Four sign tests on four scores of roughly zero still produce a confident four-letter type manufactured entirely out of rounding. Reporting that as a result is the failure mode this instrument exists to demonstrate. Implementations that add a tie-break here have reimplemented the thing being criticised."
+    },
+    "thin_margin": {
+      "threshold": 0.12,
+      "rule": "If |score| < threshold on an axis, report that letter as a coin toss and name the type the respondent would have received had it fallen the other way.",
+      "why": "The code keeps the sign and discards the magnitude. A letter assigned by four points out of a hundred is presented in the same type as one assigned by ninety. Reporting the margin is the whole point of the instrument."
+    }
+  },
+  "quadrants": {
+    "CA": {
+      "name": "Authoritarian communism",
+      "letters": "CA",
+      "color": "#bf392f",
+      "note": "The first two letters of any code. The sixteen types are this 2×2 cut into four."
+    },
+    "PA": {
+      "name": "Authoritarian fascism",
+      "letters": "PA",
+      "color": "#3c4046",
+      "note": "The first two letters of any code. The sixteen types are this 2×2 cut into four."
+    },
+    "CL": {
+      "name": "Libertarian socialism",
+      "letters": "CL",
+      "color": "#3a8a4f",
+      "note": "The first two letters of any code. The sixteen types are this 2×2 cut into four."
+    },
+    "PL": {
+      "name": "Libertarian capitalism",
+      "letters": "PL",
+      "color": "#2a6cb0",
+      "note": "The first two letters of any code. The sixteen types are this 2×2 cut into four."
+    }
+  },
+  "types": {
+    "CANG": {
+      "code": "CANG",
+      "name": "The Planner",
+      "quadrant": "CA",
+      "axes": [
+        "collective",
+        "centralized",
+        "national",
+        "gradual"
+      ],
+      "description": "Build the commonwealth through the state you already have, one bill at a time, inside one country. Ownership shifts by nationalisation and budget, not by rupture — and the machinery of the centre is a tool, not a target.",
+      "examples": "Fabian Society, Attlee’s 1945 government, Nordic social democracy at its most statist, Mitterrand in 1981."
+    },
+    "CANR": {
+      "code": "CANR",
+      "name": "The Vanguard",
+      "quadrant": "CA",
+      "axes": [
+        "collective",
+        "centralized",
+        "national",
+        "rupture"
+      ],
+      "description": "A disciplined party takes the centre, then rebuilds ownership from the top down. The nation is the unit of construction and the break is deliberate — the old institutions are not to be inherited but replaced.",
+      "examples": "Bolshevism after 1924, Marxism-Leninism, “socialism in one country”, most twentieth-century party-states."
+    },
+    "CAIG": {
+      "code": "CAIG",
+      "name": "The World Planner",
+      "quadrant": "CA",
+      "axes": [
+        "collective",
+        "centralized",
+        "internationalist",
+        "gradual"
+      ],
+      "description": "Collective ownership arrives through treaty, institution and plan, negotiated across borders and measured in decades. Patient, technical, and comfortable with a centre — provided the centre is international.",
+      "examples": "The Second International, the UN-development left, global Green New Deal and climate-finance proposals."
+    },
+    "CAIR": {
+      "code": "CAIR",
+      "name": "The Permanent Revolutionary",
+      "quadrant": "CA",
+      "axes": [
+        "collective",
+        "centralized",
+        "internationalist",
+        "rupture"
+      ],
+      "description": "A revolution confined to one country is a holding action that will be strangled or will rot. The break has to spread, and the coordinating centre has to be international from the start.",
+      "examples": "Trotsky, the Fourth International, the early Comintern."
+    },
+    "CLNG": {
+      "code": "CLNG",
+      "name": "The Municipalist",
+      "quadrant": "CL",
+      "axes": [
+        "collective",
+        "decentralized",
+        "national",
+        "gradual"
+      ],
+      "description": "Build it from the town up. Co-ops, community land trusts, public banks, participatory budgets — no seizure of the centre, because the centre is not where the commonwealth gets made.",
+      "examples": "Guild socialism, Mondragón, Porto Alegre, the Preston model, libertarian municipalism."
+    },
+    "CLNR": {
+      "code": "CLNR",
+      "name": "The Syndicalist",
+      "quadrant": "CL",
+      "axes": [
+        "collective",
+        "decentralized",
+        "national",
+        "rupture"
+      ],
+      "description": "The union, not the party, is the unit — and the workplace is taken directly rather than legislated into public hands. The state is not the prize. It is the obstacle.",
+      "examples": "The IWW, the CNT before 1936, anarcho-syndicalism, the general-strike tradition."
+    },
+    "CLIG": {
+      "code": "CLIG",
+      "name": "The Commoner",
+      "quadrant": "CL",
+      "axes": [
+        "collective",
+        "decentralized",
+        "internationalist",
+        "gradual"
+      ],
+      "description": "Shared resources and federated co-operatives, grown rather than declared, and indifferent to which flag they are grown under. The commons is an institution to be built and defended, not a phase to be passed through.",
+      "examples": "Mutualism after Proudhon, the commons movement, Ostrom’s governed commons, platform co-ops."
+    },
+    "CLIR": {
+      "code": "CLIR",
+      "name": "The Anarchist",
+      "quadrant": "CL",
+      "axes": [
+        "collective",
+        "decentralized",
+        "internationalist",
+        "rupture"
+      ],
+      "description": "Collective ownership, no central authority, no borders, and no waiting. This is the corner the 1891 window held comfortably and the 2026 window does not contain at all — the erased quadrant, in full.",
+      "examples": "Kropotkin, Makhno’s Ukraine, revolutionary Catalonia 1936, Rojava."
+    },
+    "PANG": {
+      "code": "PANG",
+      "name": "The National Conservative",
+      "quadrant": "PA",
+      "axes": [
+        "private",
+        "centralized",
+        "national",
+        "gradual"
+      ],
+      "description": "Private property, a strong state to defend it, the nation as the frame, and change by increment. Order is the precondition for everything else, and the existing institutions are worth conserving precisely because they work.",
+      "examples": "One-nation Toryism, Bismarck, Gaullism, the East Asian developmental states."
+    },
+    "PANR": {
+      "code": "PANR",
+      "name": "The Strongman",
+      "quadrant": "PA",
+      "axes": [
+        "private",
+        "centralized",
+        "national",
+        "rupture"
+      ],
+      "description": "Ownership stays private, all power moves to the centre, the nation is redefined by who is excluded from it, and the change comes fast. This is the fascist corner of the map. The site names it rather than finding a softer word.",
+      "examples": "Interwar fascism, the twentieth-century military coup, contemporary authoritarian nationalism."
+    },
+    "PAIG": {
+      "code": "PAIG",
+      "name": "The Technocrat",
+      "quadrant": "PA",
+      "axes": [
+        "private",
+        "centralized",
+        "internationalist",
+        "gradual"
+      ],
+      "description": "Markets, managed by expert international institutions, adjusted by rulebook and treaty. Not a defence of any nation and not a revolution — an administration, run by people who believe the arguing is mostly over.",
+      "examples": "The WTO–IMF consensus, Davos, EU single-market governance, central-bank independence."
+    },
+    "PAIR": {
+      "code": "PAIR",
+      "name": "The Shock Therapist",
+      "quadrant": "PA",
+      "axes": [
+        "private",
+        "centralized",
+        "internationalist",
+        "rupture"
+      ],
+      "description": "Use the crisis. A market order can be imposed faster than it can be argued for, and the window in which resistance is disorganised is the window in which to move.",
+      "examples": "The Chicago Boys in Chile, Russia 1992, post-disaster reconstruction economics."
+    },
+    "PLNG": {
+      "code": "PLNG",
+      "name": "The Classical Liberal",
+      "quadrant": "PL",
+      "axes": [
+        "private",
+        "decentralized",
+        "national",
+        "gradual"
+      ],
+      "description": "A small state, secure private property, the nation as the working frame, and change that comes slowly and through law. Suspicious of concentrated power without being in a hurry to dismantle anything.",
+      "examples": "Gladstonian liberalism, Hayek’s political writing, mainstream small-government conservatism."
+    },
+    "PLNR": {
+      "code": "PLNR",
+      "name": "The Secessionist",
+      "quadrant": "PL",
+      "axes": [
+        "private",
+        "decentralized",
+        "national",
+        "rupture"
+      ],
+      "description": "Get out from under the state entirely — on this ground, with these neighbours, and by force if the state comes to collect. Property is defended locally because no distant authority is legitimate enough to do it.",
+      "examples": "Militia libertarianism, sovereign-citizen currents, hard secession movements."
+    },
+    "PLIG": {
+      "code": "PLIG",
+      "name": "The Free Trader",
+      "quadrant": "PL",
+      "axes": [
+        "private",
+        "decentralized",
+        "internationalist",
+        "gradual"
+      ],
+      "description": "Open the borders to goods, capital and people, keep the state minimal, and let the argument be won by commerce and persuasion rather than by rupture. The nation is a jurisdiction, not a moral unit.",
+      "examples": "Cobden and Bright, Bastiat, contemporary open-borders libertarianism."
+    },
+    "PLIR": {
+      "code": "PLIR",
+      "name": "The Exit Capitalist",
+      "quadrant": "PL",
+      "axes": [
+        "private",
+        "decentralized",
+        "internationalist",
+        "rupture"
+      ],
+      "description": "Private property, no state at all, no borders — and no intention of reforming anything. Build the replacement, make the old jurisdiction irrelevant, and walk out of it.",
+      "examples": "Anarcho-capitalism, Rothbard, seasteading, crypto-exit and network-state projects."
+    }
+  },
+  "grid": {
+    "note": "A 4×4 presentation in which the outer 2×2 is still the ownership × control map.",
+    "columns": [
+      {
+        "ownership": "C",
+        "horizon": "I"
+      },
+      {
+        "ownership": "C",
+        "horizon": "N"
+      },
+      {
+        "ownership": "P",
+        "horizon": "I"
+      },
+      {
+        "ownership": "P",
+        "horizon": "N"
+      }
+    ],
+    "rows": [
+      {
+        "control": "A",
+        "method": "R"
+      },
+      {
+        "control": "A",
+        "method": "G"
+      },
+      {
+        "control": "L",
+        "method": "R"
+      },
+      {
+        "control": "L",
+        "method": "G"
+      }
+    ]
+  }
+}
